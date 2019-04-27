@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/student','StudentController@index');
+
+
+Route::resource('/teacher', 'TeacherController');
